@@ -119,6 +119,24 @@
         footer p {
             margin: 0;
             padding: 0;
+            word-wrap: break-word; /* Ensure long text breaks properly within the footer */
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .navbar h1 {
+                font-size: 24px;
+            }
+            .projects {
+                grid-template-columns: 1fr; /* Stack the projects in a single column */
+            }
+            footer p {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
